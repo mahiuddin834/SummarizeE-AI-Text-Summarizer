@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "207869636026",
+    "project_id": "summarizee-ec1b9",
+    "storage_bucket": "summarizee-ec1b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207869636026:android:71b6858f070dfe81f2c183",
+        "android_client_info": {
+          "package_name": "com.itnation.summarizee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpY9QXmcC0z2_8l_0tqKn--yub5LKyxzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
