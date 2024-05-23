@@ -1,11 +1,16 @@
 package com.itnation.summarizee;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,6 +62,31 @@ public class OutputActivity extends AppCompatActivity {
         resultViewTxt.setText(paragraph);
 
 
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onBackPressed();
+            }
+        });
+
+        copyActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (resultViewTxt.getText().toString() != null){
+
+
+                    ClipboardManager cm = (ClipboardManager)getApplicationContext().getSystemService(Context.CLIPBOARD_SERVICE);
+                    cm.setText(resultViewTxt.getText().toString());
+                    Toast.makeText(getApplicationContext(), "Copied :)", Toast.LENGTH_SHORT).show();
+
+
+                }
+
+            }
+        });
 
 
     }//---------- close onCreate --------------------

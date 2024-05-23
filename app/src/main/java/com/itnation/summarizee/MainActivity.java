@@ -94,7 +94,10 @@ public class MainActivity extends AppCompatActivity {
 
         String sumQuery = "Summarize the following text in " + minWord + " - " + maxWord + " words: \"" + mainTxt + "\" . ";
 
-        Toast.makeText(this, sumQuery, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, sumQuery, Toast.LENGTH_SHORT).show();
+
+
+
 
 
         AiModel model = new AiModel();
